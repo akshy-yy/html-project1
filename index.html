@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For my baby</title>
+</head>
+<body>
+    <h1>Hiiiiiiiiiii &lt;3</h1>
+    <hr>
+
+    <h2>My baby booooo are u not feeling okay?</h2>
+    <p>It's okay :)
+        I am right here. You don't have to worry about anything. I am going to be here always to make you feel better.
+        If I am not able to take care of you.. please forgive me okay. So for the times when I am not able to be there,
+        this place will give you comfort. I hope you like it :")
+    </p>
+
+    <hr>
+    <h2>Akshaya's playlist for her baby &lt;3</h2>
+    <p>Listen to them okay? I hope it calms you down.</p>
+
+    <!-- Audio playlist -->
+    
+
+    <p>Song 1</p>
+    <audio class="player" src="audio%202.mp3" controls></audio>
+
+    <p>Song 2</p>
+    <audio class="player" src="audio%203.mp3" controls></audio>
+
+    <p>Song 3</p>
+    <audio class="player" src="audio%204.mp3" controls></audio>
+
+    <p>Song 4</p>
+    <audio class="player" src="audio%205.mp3" controls></audio>
+
+    <p>Song 5</p>
+    <audio class="player" src="audio%206.mp3" controls></audio>
+
+    <p>Song 6</p>
+    <audio class="player" src="audio%207.mp3" controls></audio>
+
+    <!-- Script: Only one audio plays at a time -->
+    <script>
+        const players = document.querySelectorAll(".player");
+
+        players.forEach(p => {
+            p.addEventListener("play", () => {
+                players.forEach(other => {
+                    if (other !== p) other.pause();
+                });
+            });
+        });
+    </script>
+    <hr>
+    <p>I love you so so sooo muchh babyy booo.. please take care okay? I hope you get better. Don't overthink. I know it's difficult not to and it isn't in your control. But try not to okay? Why fear when Akshaya is here.. la? so stay happy and keep smiling always bbayyyy.. U look cute when you smile. I love it when you smile.. I love you soooo muchhhhh. Mwaahhhh</p>
+    <p>XOXO Akshu <3</p>
+
+</body>
+</html>
